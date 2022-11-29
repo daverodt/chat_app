@@ -14,7 +14,6 @@ const port = process.env.PORT || 3000
 const publicDirectoryPath = path.join(__dirname, '../public')
 
 app.use(express.static(publicDirectoryPath));
-// let count = 0
 
 io.on('connection', (socket) => {    
     socket.on('join', (options, callback ) => {
@@ -67,7 +66,6 @@ io.on('connection', (socket) => {
 })
 
 server.listen(port, () => {
-  console.log("Server is up on port " + port);
 });
 
 
