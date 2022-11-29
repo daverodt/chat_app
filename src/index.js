@@ -66,6 +66,7 @@ io.on('connection', (socket) => {
 })
 
 server.listen(port, () => {
+  console.log('Starting in port ' + port)
 });
 
 
